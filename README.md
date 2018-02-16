@@ -2,7 +2,7 @@
 
 1. Fork this repository
 
-## Step 1: Retrospective Blog Post
+## Retrospective Blog Post
 
 The weekend is a great time to process and reflect on your thoughts and experiences here. Write a blog post about your first week experience. 
 
