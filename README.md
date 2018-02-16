@@ -1,7 +1,5 @@
 # Weekend One Homework
 
-1. Fork this repository
-
 ## Retrospective Blog Post
 
 The weekend is a great time to process and reflect on your thoughts and experiences here. Write a blog post about your first week experience. 
