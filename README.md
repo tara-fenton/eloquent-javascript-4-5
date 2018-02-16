@@ -20,7 +20,7 @@ Feel free to publish your blog post on a blogging website like [medium.com](http
 
 If you don't want to share it on a public website, paste the content into a new file `blog-post.md` in your forked repository.
 
-## Functions and looping
+## Functions and looping exercises
 
 We'll offer a few exercises from Eloquent JavaScript for you to practice what we did this week.
 
