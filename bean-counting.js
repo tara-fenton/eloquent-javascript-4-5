@@ -1,10 +1,6 @@
 //function that takes a string as its only argument and
 //returns a number that indicates how many uppercase “B” characters are in the string
 function countBs(str) {
-  //var bCount = 0;
-  //for (var i = 0; i < str.length; i++){
-
-  //}
   return countChar(str, "B");
 }
 
