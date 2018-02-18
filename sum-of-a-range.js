@@ -6,9 +6,18 @@ function range(start, end, step){
   if (step === undefined) { step = 1; }
 
   var i = start;
-  while (i <= end) {
-    array.push(i);
-    i = i + step;
+  if (step > 0) {
+    // positive step
+    while (i <= end) {
+      array.push(i);
+      i = i + step;
+    }
+  } else {
+    // negative step
+    while (i >= end) {
+      array.push(i);
+      i = i + step;
+    }
   }
 
   return array;
