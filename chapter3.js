@@ -44,6 +44,8 @@ console.log(isEven(75));
 console.log(isEven(-10));
 // → ??
 
+//recursion example
+
 function findSolution(target) {
   function find(current, history) {
     if (current == target)
