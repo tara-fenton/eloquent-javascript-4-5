@@ -75,29 +75,28 @@ function average(array) {
 
 // Your code here.
 function every(array, value) {
+  var bool = true;
   array.forEach(function(element) {
-    console.log("element and value "+value(element))
-    console.log("element and value "+typeof value(element),value(element))
     if (!value(element)) {
-      console.log("in the if statement")
-      return false;
+      bool = false;
     }
   });
-  return true;
+  return bool;
 }
 
-//why doesn't this work???
-//the values are being checked and the if statement is reached
-
-
-function some() {
-
+function some(array, value) {
+  for (var i = 0; i < array.length; i++){
+    if (value(array[i]))  {
+      return true;
+    }
+  }
+  return false;
 }
 console.log(every([NaN, NaN, NaN], isNaN));
-// // → true
+// → true
 console.log(every([NaN, NaN, 4], isNaN));
-// // → false
-// console.log(some([NaN, 3, 4], isNaN));
-// // → true
-// console.log(some([2, 3, 4], isNaN));
-// // → false
+// → false
+console.log(some([NaN, 3, 4], isNaN));
+// → true
+console.log(some([2, 3, 4], isNaN));
+// → false
