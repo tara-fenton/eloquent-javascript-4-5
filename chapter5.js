@@ -74,15 +74,28 @@ function average(array) {
 //except that they take the array as their first argument rather than being a method.
 
 // Your code here.
-function every() {
-
+function every(array, value) {
+  array.forEach(function(element) {
+    console.log("element and value "+value(element))
+    console.log("element and value "+typeof value(element),value(element))
+    if (!value(element)) {
+      console.log("in the if statement")
+      return false;
+    }
+  });
+  return true;
 }
+
+//why doesn't this work???
+//the values are being checked and the if statement is reached
+
+
 function some() {
 
 }
-// console.log(every([NaN, NaN, NaN], isNaN));
+console.log(every([NaN, NaN, NaN], isNaN));
 // // → true
-// console.log(every([NaN, NaN, 4], isNaN));
+console.log(every([NaN, NaN, 4], isNaN));
 // // → false
 // console.log(some([NaN, 3, 4], isNaN));
 // // → true
